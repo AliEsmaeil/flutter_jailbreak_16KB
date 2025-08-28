@@ -33,11 +33,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
-        externalNativeBuild {
-        cmake {
-            arguments "-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-z,max-page-size=16384"
-        }
-    }
+
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
